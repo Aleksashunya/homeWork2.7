@@ -14,6 +14,10 @@ class SecondTableViewController: UITableViewController{
         super.viewDidLoad()
         tableView.rowHeight = 40
     }
+    override func viewDidAppear(_ animated: Bool) {
+        persons = newPerson
+       tableView.reloadData()
+    }
 }
 
 extension SecondTableViewController {

@@ -18,6 +18,7 @@ class PersonInfoViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView()
         
         title = person.fullName
         tableView.rowHeight = 70
@@ -26,7 +27,6 @@ class PersonInfoViewController: UIViewController, UITableViewDataSource, UITable
         self.tableView.delegate = self
     }
 }
-
 
 extension PersonInfoViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,11 +46,7 @@ extension PersonInfoViewController {
         content.text = (indexPath.item % 2 != 0) ?  "Email" : "Phone"
         content.secondaryText = (indexPath.item % 2 != 0) ?  person.email : String(person.phone)
         cell.contentConfiguration = content
-        
-        let whiteView : UIView = UIView(frame: CGRect(x: 10, y: 8, width: self.view.frame.size.width - 20, height: 120))
-        whiteView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 0.9])
-        cell.contentView.addSubview(whiteView)
-        cell.contentView.sendSubviewToBack(whiteView)
+        cell.backgroundColor = view.backgroundColor
         
         return cell
     }

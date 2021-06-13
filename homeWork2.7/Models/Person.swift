@@ -16,7 +16,7 @@ struct Person {
     }
 }
 
-let newPerson = Person.getPerson()
+var newPerson = Person.getPerson()
 
 extension Person {
     static func getPerson() -> [Person] {

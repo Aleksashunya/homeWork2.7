@@ -13,7 +13,7 @@ class FirstTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 45
-        navigationItem.rightBarButtonItem = editButtonItem
+        navigationItem.leftBarButtonItem = editButtonItem
         tableView.tableFooterView = UIView() //удаляет лишние пустые ячейки
     }
 }
@@ -64,5 +64,16 @@ extension FirstTableViewController {
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         let currentPerson = persons.remove(at: sourceIndexPath.row)
         persons.insert(currentPerson, at: destinationIndexPath.row)
+    }
+}
+
+extension FirstTableViewController {
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UITableViewController) {
+        guard let vc = unwindSegue.source as? NewPersonTableViewController else { return }
+       
+        vc.saveNewPerson()
+        newPerson.append(vc.person)
+        persons = newPerson
+        tableView.reloadData()
     }
 }
