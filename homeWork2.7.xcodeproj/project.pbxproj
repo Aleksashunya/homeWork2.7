@@ -14,7 +14,7 @@
 		7A9BD99C267236EC0068E44D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9BD99B267236EC0068E44D /* Assets.xcassets */; };
 		7A9BD99F267236EC0068E44D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9BD99D267236EC0068E44D /* LaunchScreen.storyboard */; };
 		7A9BD9A7267240A80068E44D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BD9A6267240A80068E44D /* Person.swift */; };
-		7A9BD9A9267361470068E44D /* SecondPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BD9A8267361470068E44D /* SecondPTableViewController.swift */; };
+		7A9BD9A9267361470068E44D /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BD9A8267361470068E44D /* SecondTableViewController.swift */; };
 		7A9BD9AB2673799C0068E44D /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BD9AA2673799C0068E44D /* PersonInfoViewController.swift */; };
 		7A9BD9B126743E310068E44D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BD9B026743E310068E44D /* Data.swift */; };
 		7A9BD9B326760AA10068E44D /* NewPersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BD9B226760AA10068E44D /* NewPersonTableViewController.swift */; };
@@ -30,7 +30,7 @@
 		7A9BD99E267236EC0068E44D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A9BD9A0267236EC0068E44D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A9BD9A6267240A80068E44D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		7A9BD9A8267361470068E44D /* SecondPTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPTableViewController.swift; sourceTree = "<group>"; };
+		7A9BD9A8267361470068E44D /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
 		7A9BD9AA2673799C0068E44D /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 		7A9BD9B026743E310068E44D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		7A9BD9B226760AA10068E44D /* NewPersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonTableViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				7A9BD996267236E90068E44D /* FirstTableViewController.swift */,
-				7A9BD9A8267361470068E44D /* SecondPTableViewController.swift */,
+				7A9BD9A8267361470068E44D /* SecondTableViewController.swift */,
 				7A9BD9AA2673799C0068E44D /* PersonInfoViewController.swift */,
 				7A9BD9B226760AA10068E44D /* NewPersonTableViewController.swift */,
 			);
@@ -188,7 +188,7 @@
 				7A9BD9B326760AA10068E44D /* NewPersonTableViewController.swift in Sources */,
 				7A9BD997267236E90068E44D /* FirstTableViewController.swift in Sources */,
 				7A9BD9AB2673799C0068E44D /* PersonInfoViewController.swift in Sources */,
-				7A9BD9A9267361470068E44D /* SecondPTableViewController.swift in Sources */,
+				7A9BD9A9267361470068E44D /* SecondTableViewController.swift in Sources */,
 				7A9BD993267236E90068E44D /* AppDelegate.swift in Sources */,
 				7A9BD9A7267240A80068E44D /* Person.swift in Sources */,
 				7A9BD995267236E90068E44D /* SceneDelegate.swift in Sources */,

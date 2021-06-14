@@ -16,7 +16,7 @@ class SecondTableViewController: UITableViewController{
     }
     override func viewDidAppear(_ animated: Bool) {
         persons = newPerson
-       tableView.reloadData()
+        tableView.reloadData()
     }
 }
 

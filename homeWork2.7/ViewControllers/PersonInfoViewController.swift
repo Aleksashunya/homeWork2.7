@@ -9,9 +9,6 @@ import UIKit
 
 class PersonInfoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var phoneLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
-    
     @IBOutlet weak var tableView: UITableView!
     
     var person = Person()
